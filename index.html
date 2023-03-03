@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .layout {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+    #logo {
+      display: block;
+      width: 650px;
+      height: 250px;
+      margin: auto 0;
+    }
+    #imagen{
+    display: block;
+      width: 650px;
+      height: 650px;
+      margin: auto 0;
+    }
+    @media screen and (max-width: 1024px) {
+      .layout {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .layout img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto;
+      }
+      #logo {
+        width: calc(100% - 4rem) !important;
+        height: auto;
+        margin: 0 auto;
+      }
+      #imagen{
+        margin: 0 auto;
+      }
+
+    }
+  </style>
+  <body>
+    <div class="layout">
+      <img id="imagen"src="./working.png" alt="sitio en construccion" />
+      <img id="logo" src="./logo.png" alt="LOGO" />
+    </div>
+  </body>
+</html>
